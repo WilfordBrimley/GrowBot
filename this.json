@@ -1,0 +1,18 @@
+- platform: template
+sensors:
+  detectors_battery_replacement_days2go:
+    value_template: value_template: '{{ 
+    (
+        (
+          (
+            ( states.input_datetime.flowering_time.attributes.timestamp ) - as_timestamp( now() )
+          ) | int /60/1440
+        ) | round(0) 
+    ) }}'
+    entity_id: input_datetime.flowering_time,sensor.time
+
+terras_battery:
+name: Terras
+has_date: true
+has_time: false
+initial: '2018-11-29'
