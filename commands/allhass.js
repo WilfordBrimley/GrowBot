@@ -4,7 +4,7 @@ exports.run = async (client, message, params) => {
   const hass = new HomeAssistant({
     host: `http://192.168.0.31`,
     port: `8123`,
-    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxOTFiMTUzNmRjOTA0ZjEzYjM5OWU5NmRhZTBhMzM0MiIsImlhdCI6MTU4NTM2NzAyNiwiZXhwIjoxOTAwNzI3MDI2fQ.ltjJ96W7fNW79fjcyHOaIGnpH85Mt1FVZQ49y5yV5v0',
+    token: '',
     ignoreCert: true
   });
 // Returns an array of event objects
